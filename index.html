@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Butterfly Game </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+</head>
+
+<body>
+    <div class="container pointer">
+        <b>Puntos:</b><span id="puntos"> </span>
+        <span id="ned"> </span>
+        <b>Tiempo:</b><span id="tiempo"> </span>
+        <b>Vidas: </b><span id="vidas"> </span>
+
+    </div>
+    <div>
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+                <h2>Game Over</h2>
+                <p>Ingresa tu nombre para nuestro ranking</p>
+                <form>
+                    <input type="text" id="nombre" > 
+                    <input type="submit"  id="submit" value="Guardar cambios" > 
+                </form>  
+                
+            </div>
+        </div>
+    </div>
+    <div id="containerElementos" class="container">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
